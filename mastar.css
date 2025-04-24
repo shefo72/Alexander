@@ -43,7 +43,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
-    width: 95%;
+    width: 90%;
 }
 
 .link-item:hover {
@@ -88,11 +88,14 @@ a {
         width: 90%;
     }
     .img img {
-        width: 360px;
+        width: 340px;
     }
     .links-container {
         width: 100%;
         padding: 0px;
     }
+}
+.card {
+       margin-bottom: 50px;
 }
 
