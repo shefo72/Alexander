@@ -88,7 +88,7 @@ a {
         width: 90%;
     }
     .img img {
-        width: 340px;
+        width: 320px;
     }
     .links-container {
         width: 100%;
@@ -96,6 +96,6 @@ a {
     }
 }
 .card {
-       margin-bottom: 50px;
+       margin-bottom: 100px;
 }
 
