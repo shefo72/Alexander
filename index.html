@@ -1,51 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <title>ALEXANDER</title>
-    <link rel="stylesheet" href="mastar.css">
-    <link rel="icon" href="logo.png">
-</head>
-<body>
-    <div class="card">
-        <div class="logo-area">
-            <div class="img">
-                <img src="logo.jpg" alt="">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+        <title>ALEXANDER</title>
+        <link rel="stylesheet" href="mastar.css">
+        <link rel="icon" href="logo.png">
+    </head>
+    <body>
+        <div class="card">
+            <div class="logo-area hidden">
+                <div class="img">
+                    <img src="logo.jpg" alt="">
+                </div>
+                <div class="text">BRAND</div>
             </div>
-            <div class="text">BRAND</div>
+            
+            <div class="links-container hidden">
+                <a target="_blank" class="link-item" href="https://www.instagram.com/_alexanderbrand/?igsh=c3AxYmprM2U0ODJv#">
+                    <div class="link-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="link-text">Instagram</div>
+                </a>
+                
+                <a target="_blank" class="link-item" href="https://www.tiktok.com/@alexanderbrand_?_t=ZS-8vVla4D28kE&_r=1">
+                    <div class="link-icon">
+                        <i class="fab fa-tiktok"></i>
+                    </div>
+                    <div class="link-text">TikTok</div>
+                </a>
+                
+                <a target="_blank" class="link-item" href="https://www.facebook.com/order95?rdid=VxO7zIQwZIrBqODY&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F14xLcDiQ8L%2F#">
+                    <div class="link-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <div class="link-text">Facebook</div>
+                </a>
+            </div>
         </div>
-        
-        <div class="links-container">
-            <a target="_blank" class="link-item" href="https://www.instagram.com/_alexanderbrand/?igsh=c3AxYmprM2U0ODJv#">
-                <div class="link-icon">
-                    <i class="fab fa-instagram"></i>
-                </div>
-                <div class="link-text">Instagram</div>
-            </a>
-            
-            <a target="_blank" class="link-item" href="https://www.tiktok.com/@alexanderbrand_?_t=ZS-8vVla4D28kE&_r=1">
-                <div class="link-icon">
-                    <i class="fab fa-tiktok"></i>
-                </div>
-                <div class="link-text">TikTok</div>
-            </a>
-            
-            <a target="_blank" class="link-item" href="https://www.facebook.com/order95?rdid=VxO7zIQwZIrBqODY&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F14xLcDiQ8L%2F#">
-                <div class="link-icon">
-                    <i class="fab fa-facebook-f"></i>
-                </div>
-                <div class="link-text">Facebook</div>
-            </a>
-            
-            <!-- <a target="_blank" class="link-item" href="">
-                <div class="link-icon">
-                    <i class="fa fa-globe"></i>
-                </div>
-                <div class="link-text">Web</div>
-            </a> -->
-        </div>
-    </div>
-</body>
-</html>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const hiddenElements = document.querySelectorAll('.hidden');
+                
+                function showElements() {
+                    hiddenElements.forEach((element, index) => {
+                        setTimeout(() => {
+                            element.classList.add('show');
+                        }, index * 200); 
+                    });
+                }
+                
+                setTimeout(showElements, 200);
+            });
+        </script>
+    </body>
+    </html>
